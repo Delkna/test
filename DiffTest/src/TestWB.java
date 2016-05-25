@@ -72,37 +72,18 @@ public class TestWB extends JFrame {
 		setTitle("SimpleMerge");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 600);
-		
+				
 		JMenuBar menuBar = new JMenuBar();
-		JMenu mnf = new JMenu(" \uD30C\uC77C (F)");
-		JMenuItem mntmNewMenuItem = new JMenuItem("\uC0C8\uB85C \uB9CC\uB4E4\uAE30 (N)");
-		
-		JMenuItem mntmNewMenuItem_1 = new JMenuItem("\uB05D\uB0B4\uAE30 (X)");
-		mntmNewMenuItem_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
-			}
-		});
-		JMenu mne = new JMenu("\uD3B8\uC9D1 (E)");
-		JMenu mnNewMenu = new JMenu("\uBCF4\uAE30 (V)");
-		JMenu mnNewMenu_1 = new JMenu("\uB3C4\uAD6C (T)");
-		JMenu mnNewMenu_2 = new JMenu("\uD50C\uB7EC\uADF8\uC778 (P)");
-		JMenu mnNewMenu_3 = new JMenu("\uCC3D (W)");
-		JMenu mnNewMenu_4 = new JMenu("\uB3C4\uC6C0\uB9D0 (H)");
-		JMenuBar menuBar_1 = new JMenuBar();
-		JMenuItem menuItem = new JMenuItem("");
-		JMenuItem mntmNewMenuItem_2 = new JMenuItem("");
-		JPanel panel = new JPanel();
-		JPanel panel_1 = new JPanel();
-		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		
-		
 		menuBar.setToolTipText("");
 		setJMenuBar(menuBar);		
 		
+		JMenu mnf = new JMenu(" \uD30C\uC77C (F)");
 		menuBar.add(mnf);
 		
+		JMenuItem mntmNewMenuItem = new JMenuItem("\uC0C8\uB85C \uB9CC\uB4E4\uAE30 (N)");
 		mnf.add(mntmNewMenuItem);		
+		
+		JMenuItem mntmNewMenuItem_1 = new JMenuItem("\uB05D\uB0B4\uAE30 (X)");		
 		
 		JMenuItem mntmNewMenuItem_3 = new JMenuItem("\uC5F4\uAE30 (O)...");
 		mnf.add(mntmNewMenuItem_3);
@@ -130,11 +111,13 @@ public class TestWB extends JFrame {
 		
 		mnf.add(mntmNewMenuItem_1);		
 		
+		JMenu mne = new JMenu("\uD3B8\uC9D1 (E)");
 		menuBar.add(mne);		
 		
 		JMenuItem mntmo = new JMenuItem("\uC124\uC815(O)...");
 		mne.add(mntmo);
 		
+		JMenu mnNewMenu = new JMenu("\uBCF4\uAE30 (V)");
 		menuBar.add(mnNewMenu);		
 		
 		JMenuItem mntmNewMenuItem_7 = new JMenuItem("\uAE00\uAF34 \uC120\uD0DD(F)...");
@@ -170,6 +153,7 @@ public class TestWB extends JFrame {
 		JMenuItem mntmNewMenuItem_11 = new JMenuItem("\uC5B8\uC5B4(L)...");
 		mnNewMenu.add(mntmNewMenuItem_11);
 		
+		JMenu mnNewMenu_1 = new JMenu("\uB3C4\uAD6C (T)");
 		menuBar.add(mnNewMenu_1);		
 		
 		JMenuItem mntmNewMenuItem_15 = new JMenuItem("\uD544\uD130(F)");
@@ -178,6 +162,7 @@ public class TestWB extends JFrame {
 		JMenuItem mntmNewMenuItem_16 = new JMenuItem("\uD328\uCE58 \uC0DD\uC131(G)");
 		mnNewMenu_1.add(mntmNewMenuItem_16);
 		
+		JMenu mnNewMenu_2 = new JMenu("\uD50C\uB7EC\uADF8\uC778 (P)");
 		menuBar.add(mnNewMenu_2);		
 		
 		JMenuItem mntmNewMenuItem_17 = new JMenuItem("List...");
@@ -213,6 +198,7 @@ public class TestWB extends JFrame {
 		JMenuItem mntmNewMenuItem_23 = new JMenuItem("\uD50C\uB7EC\uADF8\uC778 \uB2E4\uC2DC \uB85C\uB4DC(R)");
 		mnNewMenu_2.add(mntmNewMenuItem_23);
 		
+		JMenu mnNewMenu_3 = new JMenu("\uCC3D (W)");
 		menuBar.add(mnNewMenu_3);		
 		
 		JMenuItem mntmNewMenuItem_24 = new JMenuItem("\uB2EB\uAE30(Q)");
@@ -239,6 +225,7 @@ public class TestWB extends JFrame {
 		JMenuItem mntmNewMenuItem_29 = new JMenuItem("\uACC4\uB2E8\uC2DD \uC815\uB82C(C)");
 		mnNewMenu_3.add(mntmNewMenuItem_29);
 		
+		JMenu mnNewMenu_4 = new JMenu("\uB3C4\uC6C0\uB9D0 (H)");
 		menuBar.add(mnNewMenu_4);
 		
 		JMenuItem mntmNewMenuItem_30 = new JMenuItem("SimpleMerge \uB3C4\uC6C0\uB9D0(W)");
@@ -269,40 +256,24 @@ public class TestWB extends JFrame {
 		mnNewMenu_4.add(mntmNewMenuItem_36);
 		getContentPane().setLayout(null);
 		
-		
+		JMenuBar menuBar_1 = new JMenuBar();
 		menuBar_1.setBounds(0, 0, 656, 28);
 		getContentPane().add(menuBar_1);
 		
-		
+		JMenuItem menuItem = new JMenuItem("");
 		menuItem.setIcon(new ImageIcon(TestWB.class.getResource("/com/sun/java/swing/plaf/windows/icons/File.gif")));
 		menuBar_1.add(menuItem);
 		
-		
-		mntmNewMenuItem_2.setHorizontalAlignment(SwingConstants.LEFT);
-		mntmNewMenuItem_2.setIcon(new ImageIcon(TestWB.class.getResource("/com/sun/java/swing/plaf/windows/icons/Directory.gif")));
-		menuBar_1.add(mntmNewMenuItem_2);		
-		
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.setBounds(0, 26, 784, 514);
-		getContentPane().add(tabbedPane);
+		getContentPane().add(tabbedPane);		
 		
-		mntmNewMenuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				while(true){
-					if(tabbedPane.getTabCount()==0) break;
-					tabbedPane.removeTabAt(0);
-				}
-				initPanel(panel);
-				initPanel2(panel_1);
-				tabbedPane.addTab("New tab2", null, panel, null);
-				tabbedPane.addTab("New tab2", null, panel_1, null);
-				JOptionPane.showMessageDialog(null, "기본 알림창입니다.");
-			}
-		});
+		JPanel panel = new JPanel();
+		//tabbedPane.addTab("New tab", null, panel, null);
 		
-		
-		tabbedPane.addTab("New tab", null, panel, null);		
-		
-		tabbedPane.addTab("New tab", null, panel_1, null);
+
+		JPanel panel_1 = new JPanel();
+		//tabbedPane.addTab("New tab", null, panel_1, null);
 		panel_1.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -332,7 +303,19 @@ public class TestWB extends JFrame {
 		
 		JEditorPane editorPane_2 = new JEditorPane();
 		scrollPane_2.setViewportView(editorPane_2);
-		btnNewButton.addActionListener(new ActionListener() {
+		
+		//
+		//
+		// actionlistener	
+		//
+		//
+		mntmNewMenuItem_1.addActionListener(new ActionListener() {	// 종료(X) 이벤트
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		btnNewButton.addActionListener(new ActionListener() {	// diff 버튼 이벤트
 			public void actionPerformed(ActionEvent e) {
 				diff_match_patch a = new diff_match_patch();
 				LinkedList<Diff> b = a.diff_main(editorPane.getText(), editorPane_1.getText());
@@ -343,16 +326,23 @@ public class TestWB extends JFrame {
 			}
 		});
 		
-	}
-
-	protected JPanel initPanel(JPanel panel) {
-		// TODO Auto-generated method stub
-		panel = new JPanel();
-		return panel;
-	}
-	protected JPanel initPanel2(JPanel panel) {
-		// TODO Auto-generated method stub
-		panel = new JPanel();
-		return panel;
+		mntmNewMenuItem.addActionListener(new ActionListener() {	// 새로 만들기(N) 이벤트
+			public void actionPerformed(ActionEvent e) {
+				while(true){
+					if(tabbedPane.getTabCount()==0) break;
+					tabbedPane.removeTabAt(0);
+				}
+				tabbedPane.addTab("New tab2", null, panel, null);
+				{					
+					;
+				}
+				tabbedPane.addTab("New tab2", null, panel_1, null);
+				{
+					editorPane.setText("");
+					editorPane_1.setText("");
+					editorPane_2.setText("");
+				}
+			}
+		});		
 	}
 }
